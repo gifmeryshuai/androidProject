@@ -36,7 +36,7 @@
 	3，最后将文件复制到SDcard 的根目录上面；
 
 
-	![image](http://ubmcmm.baidustatic.com/media/v1/0f000nKRys8gFl6qjAVu6f.jpg)
+	![Image text](https://raw.github.com/gifmeryshuai/androidProject/pictures/device-2016-07-20-141236.png)
 
 
 	
