@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.copyfileapk.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings1"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="1"/>
+    
+    <item
+        android:id="@+id/action_settings2"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="2"/>
+    
+    <item
+        android:id="@+id/action_settings3"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="3"/>
+
+</menu>

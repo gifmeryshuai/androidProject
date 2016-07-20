@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.copyfileapk.MainActivity" >
+
+    
+    <EditText
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:hint="请输入包名或应用名称"
+        android:id="@+id/packorapp_edt"
+        android:gravity="center_vertical" 
+        android:layout_marginTop="20dp"
+        android:background="@drawable/form_item_input_gray"
+        android:inputType="text"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        />
+    
+    <TextView
+        android:id="@+id/packorapp_txt"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    
+    <Button 
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:text="查询"
+        android:background="@drawable/btn_update_selector"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sure"
+        />
+    <Button 
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:text="是否保存到内存卡上"
+        android:background="@drawable/btn_update_selector"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/save"
+        />
+    
+</LinearLayout>
