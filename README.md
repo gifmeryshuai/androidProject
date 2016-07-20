@@ -44,3 +44,6 @@
 -`最后将文件复制到SDcard 的根目录上面`
 
 ![Image test](https://github.com/gifmeryshuai/androidProject/blob/master/pictures/device-2016-07-20-141236.png?raw=true)
+
+###
+我还是一个菜鸟，有什么不足之处请大神们指出！！！！谢谢！！！
