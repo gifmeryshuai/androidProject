@@ -36,7 +36,7 @@
 
 
 我实现的功能就是
-*根据包名称或者是应用名称来查询已经安装的apk
-*得到包名称应用名称和文件安装的目录“
-*最后将文件复制到SDcard 的根目录上面；
+-`根据包名称或者是应用名称来查询已经安装的apk`
+-`得到包名称应用名称和文件安装的目录`
+-`最后将文件复制到SDcard 的根目录上面`
 ![Image test](https://github.com/gifmeryshuai/androidProject/blob/master/pictures/device-2016-07-20-141236.png?raw=true)
