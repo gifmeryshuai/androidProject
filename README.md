@@ -3,6 +3,8 @@
 
 ****
 
+##    CopyFileApk项目
+
 我们经常会遇到当我们应用安装到手机上之后，安装包也已经删除了。但是，我们需要获取改装应用的APK文件；
 
 因为当手机安装了此应用之后，手机系统会默认该应用的包备份一份在手机私有的目录“data/app”可能还会有扩展的SDCARD
@@ -11,20 +13,18 @@
 应用安装的流程及路径 
 应用安装涉及到如下几个目录：
 
-
 *   system/app 
 系统自带的应用程序，无法删除
 
-*   data/app
+-   data/app
 用户程序安装的目录，有删除权限。
 
+-安装时把apk文件复制到此目录
 
-*安装时把apk文件复制到此目录
-
-*   data/data
+-   data/data
 存放应用程序的数据
 
-*   Data/dalvik-cache
+-   Data/dalvik-cache
 将apk中的dex文件安装到dalvik-cache目录下(dex文件是dalvik虚拟机的可执行文件,其大小约为原始apk文件大小的四分之一)
 
 
