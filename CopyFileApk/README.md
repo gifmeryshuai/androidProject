@@ -6,31 +6,31 @@
 	</head>
 	<body>
 		
-		*��װʱ��apk�ļ����Ƶ���Ŀ¼
+		*安装时把apk文件复制到此目录
  <br />
 	*	data/data
- 	���Ӧ�ó��������
+ 	存放应用程序的数据
  <br />
 	*	Data/dalvik-cache
- 	��apk�е�dex�ļ���װ��dalvik-cacheĿ¼��(dex�ļ���dalvik������Ŀ�ִ���ļ�,���СԼΪԭʼapk�ļ���С���ķ�֮һ)
+ 	将apk中的dex文件安装到dalvik-cache目录下(dex文件是dalvik虚拟机的可执行文件,其大小约为原始apk文件大小的四分之一)
  
 
 <br />
-       ��װ���̣�����APK��װ����data/appĿ¼�£���ѹ��ɨ�谲װ������dex�ļ�(Dalvik�ֽ���)���浽dalvik-cacheĿ¼��
-       ��data/dataĿ¼�´�����Ӧ��Ӧ������Ŀ¼
+       安装过程：复制APK安装包到data/app目录下，解压并扫描安装包，把dex文件(Dalvik字节码)保存到dalvik-cache目录，
+       并data/data目录下创建对应的应用数据目录
 
 
 	<br />
 
-	��ʵ�ֵĹ��ܾ���
-	1�����ݰ����ƻ�����Ӧ����������ѯ�Ѿ���װ��apk
-	2���õ�������Ӧ�����ƺ��ļ���װ��Ŀ¼��
-	3������ļ����Ƶ�SDcard �ĸ�Ŀ¼���棻
+	我实现的功能就是
+	1，根据包名称或者是应用名称来查询已经安装的apk
+	2，得到包名称应用名称和文件安装的目录“
+	3，最后将文件复制到SDcard 的根目录上面；
 
 
 	<br />
 
-	<img src="https://github.com/gifmeryshuai/androidProject/blob/master/pictures/device-2016-07-20-141236.png?raw=true" />
+	<img src="https://github.com/gifmeryshuai/androidProject/blob/master/pictures/device-2016-07-20-141236.png" />
 
 	</body>
 </html>
