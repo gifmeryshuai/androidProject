@@ -25,6 +25,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity implements OnClickListener {
 
 	
+	//GitHub -- 测试修改内容
 	private static final String TAG = "MainActivity.class";
 	private EditText packAppEdt;
 	private TextView packAppTxt;
