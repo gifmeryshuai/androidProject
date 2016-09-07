@@ -494,7 +494,8 @@ public class App extends Application {
 
 ```
 
-
+#### 项目我已经上传到github上了，需要的可以上GitHub下载查看！！如有不足之处请指出，必定虚心学习；谢谢啦！！！！
+#### https://github.com/gifmeryshuai/androidProject.git
 
 
 
