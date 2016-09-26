@@ -177,13 +177,12 @@ public class RecycleAdapter extends RecyclerView.Adapter<MyHolderView> implement
 ###### 通常我们开始写RecycleView的时候都是这样写的，如果每一次有列表的时候都这样写一次那岂不是很是麻烦吗，就算不麻烦自己像这样写也会吐的！所有要简化....
 
 ##### 当我们想要写工具类的时候要首先考虑他的实用性，简单性，和安全性，以及健壮性和性能的提升等等，都要考虑到；不能写一个工具类只考虑实用性和易用性，不考虑性能也是不行的。所以我们从这几个方面考虑。
-- 1，创建的Adapter要将数据源传入道创建的Adapter中，这样不利于对数据源的把控和操作。还要将Context、数据源，以及Item布局传入进去；还有
-- 2，另外，在onBindViewHolder方法中将控件从创建的ViewHolder中拿出，在填入数据，而这个方法只能在Adapter中的onBindViewHolder里面实现；
+- 1，创建的Adapter要将数据源传入到创建的Adapter中，这样不利于对数据源的把控和操作。还要将Context、数据源，以及Item布局传入进去； 2，另外，在onBindViewHolder方法中将控件从传入进来的ViewHolder中拿出，再填入数据，而这个方法只能在Adapter中的onBindViewHolder里面实现；
 - 3，创建ViewHolder的时候每次都要整理布局里面所有的控件，初始化一遍，也很是麻烦；
 - 4，而数据的List实体显示不同的数据实体也是不一样的，当实体不一样的时候你们就要重新创建一个适配器；很显然这是很不可取的；
 
 
-##### 如果我们能在创建Adapter的时候将这个方法抛出到Activity中或是Fragment使用是不是方便的多了，不用考虑Adapter内部是怎么实现的，只考虑onBindViewHolder控件数据的添入，并显示出来，那么工作量就小了很多；
+##### 如果我们能在创建Adapter的时候将这个方法抛出到Activity中或是Fragment使用是不是方便的多了，不用考虑Adapter和，ViewHolder内部是怎么实现的，直接封装好，只考虑onBindViewHolder控件数据的添入，并显示出来，那么工作量就小了很多；
 
 ##### 接下来我们就按照上面提到的，麻烦逐一解决：
 
