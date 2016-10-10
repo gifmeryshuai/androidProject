@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+
+        表示的是一个item表示一个图层，后面的图层压在前面的图层上面
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android：drawable="@drawable/自己项目drawable里面的图片">
+    </item>
+    <item android:id="@android:id/progress" android：drawable="@drawable/自己项目drawable里面的图片">
+    </item>
+
+    </layer-list>
+
+    -->
+<!--//<layer-list/>表示的是一个item表示一个图层，后面的图层压在前面的图层上面-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <!--<corners android:radius="5dip" />-->
+            <gradient
+                android:angle="270"
+                android:centerColor="#ff747674"
+                android:centerY="0.75"
+                android:endColor="#ff747674"
+                android:startColor="#ff747674" />
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <!--<corners android:radius="5dip" />-->
+                <gradient
+                    android:angle="270"
+                    android:centerColor="@color/colorPrimary"
+                    android:centerY="0.75"
+                    android:endColor="@color/colorPrimary"
+                    android:startColor="@color/colorPrimary" />
+
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <!--<corners android:radius="5dip" />-->
+                <gradient
+                    android:angle="270"
+                    android:centerColor="#ffffb600"
+                    android:centerY="0.75"
+                    android:endColor="#ffffcb00"
+                    android:startColor="#ffffd300" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

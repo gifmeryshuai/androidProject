@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AndroidCard_Test</string>
+    <string name="indeterminate_horizontal_progress_toolbar">indeterminate_horizontal_progress_toolbar</string>
+    <string name="horizontal_progress_toolbar">horizontal_progress_toolbar</string>
+    <string name="toolbar_progress">toolbar_progress</string>
+    <string name="library_implementation">library_implementation</string>
+    <string name="native_implementation">native_implementation</string>
+    <string name="indeterminate_progress">indeterminate_progress</string>
+    <string name="horizontal_progress">horizontal_progress</string>
+    <string name="indeterminate_horizontal_progress">indeterminate_horizontal_progress</string>
+</resources>

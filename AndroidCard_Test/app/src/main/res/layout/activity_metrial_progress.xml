@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2015 Zhang Hai <Dreaming.in.Code.ZH@Gmail.com>
+  ~ All Rights Reserved.
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/screen_edge_vertical_margin"
+        android:paddingLeft="@dimen/screen_edge_horizontal_margin"
+        android:paddingRight="@dimen/screen_edge_horizontal_margin"
+        android:paddingTop="@dimen/screen_edge_vertical_margin">
+
+        <!-- Horizontal progress -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/horizontal_progress"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/native_implementation"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <ProgressBar
+            android:id="@+id/horizontal_progress_native"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="30"
+            android:secondaryProgress="60" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/library_implementation"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <!-- android:tint="#FECD42" 是给进度条设置颜色 -->
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@+id/horizontal_progress_library"
+            style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="30"
+            android:secondaryProgress="60"
+            android:tint="#FECD42"
+            app:mpb_progressStyle="horizontal" />
+
+        <!-- Indeterminate horizontal progress -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/indeterminate_horizontal_progress"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/native_implementation"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <ProgressBar
+            android:id="@+id/indeterminate_horizontal_progress_native"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/library_implementation"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <!-- android:indeterminate="true" 在水平进度条中表示有没有进度动画来回跑 -->
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@+id/indeterminate_horizontal_progress_library"
+            style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:tint="#FECD42"
+            app:mpb_progressStyle="horizontal"
+            app:mpb_tintMode="src_in" />
+
+        <!-- Indeterminate progress -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/indeterminate_progress"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/native_implementation"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/indeterminate_progress_large_native"
+                style="?android:progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:indeterminate="true" />
+
+            <ProgressBar
+                android:id="@+id/indeterminate_progress_native"
+                style="?android:progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:indeterminate="true" />
+
+            <ProgressBar
+                android:id="@+id/indeterminate_progress_small_native"
+                style="?android:progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:indeterminate="true" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/library_implementation"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                android:id="@+id/indeterminate_progress_large_library"
+                style="@style/Widget.MaterialProgressBar.ProgressBar.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:indeterminate="true"
+                android:tint="#FECD42" />
+
+            <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                android:id="@+id/indeterminate_progress_library"
+                style="@style/Widget.MaterialProgressBar.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:indeterminate="true" />
+
+            <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                android:id="@+id/indeterminate_progress_small_library"
+                style="@style/Widget.MaterialProgressBar.ProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:indeterminate="true" />
+        </FrameLayout>
+
+        <!-- Toolbar -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/toolbar_progress"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginBottom="6.4dp"
+            android:layout_marginTop="6.4dp"
+            android:background="?colorPrimary"
+            android:theme="?actionBarTheme">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="?contentInsetStart"
+                android:paddingRight="?contentInsetEnd"
+                android:theme="?actionBarStyle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/horizontal_progress_toolbar"
+                    android:textAppearance="?titleTextStyle" />
+            </FrameLayout>
+
+            <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                android:id="@+id/horizontal_progress_toolbar"
+                style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal.NoPadding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:progress="30"
+                android:secondaryProgress="60"
+                app:mpb_progressStyle="horizontal"
+                app:mpb_showTrack="false"
+                app:mpb_useIntrinsicPadding="false" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginBottom="6.4dp"
+            android:layout_marginTop="6.4dp"
+            android:background="?colorPrimary"
+            android:theme="?actionBarTheme">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="?contentInsetStart"
+                android:paddingRight="?contentInsetEnd"
+                android:theme="?actionBarStyle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/indeterminate_horizontal_progress_toolbar"
+                    android:textAppearance="?titleTextStyle" />
+            </FrameLayout>
+
+            <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                android:id="@+id/indeterminate_horizontal_progress_toolbar"
+                style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal.NoPadding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:indeterminate="true"
+                app:mpb_progressStyle="horizontal"
+                app:mpb_showTrack="false"
+                app:mpb_useIntrinsicPadding="false" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>
