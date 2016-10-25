@@ -105,7 +105,7 @@ public static void stackTest() {
 
 
 #### 三，最小栈的实现
-> 上面已经说了，栈的基本使用方法，现在我们有这么一个问题；
+ 上面已经说了，栈的基本使用方法，现在我们有这么一个问题；
 
 
 
@@ -118,11 +118,11 @@ public static void stackTest() {
 3. 之后每当有元素入栈的时候，都要与min索引所指定的栈中数据进行比较，如果小于新元素那么，就像min赋值为新元素的索引，否则维持min的值不变；
 4. 当调用getMin的方法时候，就通过stack.elementAt(min)，来取出来；
 
-![image1](https://github.com/gifmeryshuai/markDown-ImageCahce/blob/master/stack-1.png?raw=true)
-![image2](https://github.com/gifmeryshuai/markDown-ImageCahce/blob/master/stack-2.png?raw=true)
-![image3](https://github.com/gifmeryshuai/markDown-ImageCahce/blob/master/stack-3.png?raw=true)
+ ![image1](https://github.com/gifmeryshuai/markDown-ImageCahce/blob/master/stack-1.png?raw=true)
+ ![image2](https://github.com/gifmeryshuai/markDown-ImageCahce/blob/master/stack-2.png?raw=true)
+ ![image3](https://github.com/gifmeryshuai/markDown-ImageCahce/blob/master/stack-3.png?raw=true)
 
-> 知道思路之后我们看代码：（主要看获取栈中最小值的方法）
+ 知道思路之后我们看代码：（主要看获取栈中最小值的方法）
 
 ```xml
 /**
