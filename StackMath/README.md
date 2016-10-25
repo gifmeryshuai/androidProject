@@ -16,6 +16,8 @@
 #### 二，栈的使用方法
 
 >     了解了栈的概念之后我们现在看一下具体栈操作的代码：
+
+
 ```xml
 public static void stackTest() {
 		
@@ -120,7 +122,7 @@ public static void stackTest() {
 
  ![image1](https://github.com/gifmeryshuai/markDown-ImageCahce/blob/master/stack-1.png?raw=true)
  ![image2](https://github.com/gifmeryshuai/markDown-ImageCahce/blob/master/stack-2.png?raw=true)
- ![image3](https://github.com/gifmeryshuai/markDown-ImageCahce/blob/master/stack-3.png?raw=true)
+![image3](https://github.com/gifmeryshuai/markDown-ImageCahce/blob/master/stack-3.png?raw=true)
 
  知道思路之后我们看代码：（主要看获取栈中最小值的方法）
 
