@@ -109,7 +109,6 @@ public static void stackTest() {
 
 
 
-```
 如果有一个栈，要有出栈（pop）,入栈(push)，还有获取最小值（getMin）方法;
 
 思路：
@@ -118,13 +117,13 @@ public static void stackTest() {
 2. 当第一个元素入栈的时候，将min值赋值为0；
 3. 之后每当有元素入栈的时候，都要与min索引所指定的栈中数据进行比较，如果小于新元素那么，就像min赋值为新元素的索引，否则维持min的值不变；
 4. 当调用getMin的方法时候，就通过stack.elementAt(min)，来取出来；
-```
+
 ![image1](https://github.com/gifmeryshuai/markDown-ImageCahce/blob/master/stack-1.png?raw=true)
 ![image2](https://github.com/gifmeryshuai/markDown-ImageCahce/blob/master/stack-2.png?raw=true)
 ![image3](https://github.com/gifmeryshuai/markDown-ImageCahce/blob/master/stack-3.png?raw=true)
 
 > 知道思路之后我们看代码：（主要看获取栈中最小值的方法）
-```
+
 ```xml
 /**
 	 * 方法一
